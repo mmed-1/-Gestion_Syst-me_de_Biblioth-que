@@ -12,17 +12,3 @@ public abstract class Person {
         System.out.println("email: " + this.email);
     }
 }
-
-class User extends Person {
-    private int nbLivresEmpruntes;
-
-    User(String name, String email, int nbLivre) {
-        super(name, email);
-        this.nbLivresEmpruntes = nbLivre;  
-    }
-
-    public void displayInfo() {
-        super.displayInfo();
-        System.out.println("Nombre des livres empruntes: " + this.nbLivresEmpruntes);
-    }
-}
